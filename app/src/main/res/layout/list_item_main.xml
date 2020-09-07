@@ -7,38 +7,38 @@
     android:layout_gravity="center_vertical"
     app:dragFromEdge="right">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical|end"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|end"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/info_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/ic_info_outline"
-                android:text="Info"/>
+        <ImageButton
+            android:id="@+id/info_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_info_outline"
+            android:text="@string/info"
+            android:contentDescription="@string/info" />
 
-            <ImageButton
-                android:id="@+id/edit_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/ic_edit"
-                android:text="Edit"/>
+        <ImageButton
+            android:id="@+id/edit_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_edit"
+            android:text="@string/edit"
+            android:contentDescription="@string/edit" />
 
-        </LinearLayout>
-    </FrameLayout>
+    </LinearLayout>
+
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="true">
+        android:clickable="true"
+        android:focusable="true">
 
         <androidx.cardview.widget.CardView
 
@@ -61,7 +61,7 @@
                     android:gravity="center_vertical"
                     android:textSize="20sp"
                     android:fontFamily="sans-serif-smallcaps"
-                    android:text="Salmon"/>
+                    android:text="@string/salmon"/>
 
             </FrameLayout>
 
